@@ -6,10 +6,11 @@ class Solution(object):
         """
         left, right = 0, len(s) - 1
         
-        # Swap the characters while moving the pointers
+        # Swap characters while left < right
         while left < right:
             s[left], s[right] = s[right], s[left]
             left += 1
             right -= 1
+
 
         
